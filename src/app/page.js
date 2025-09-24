@@ -6,18 +6,18 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
+          // className={styles.logo}
+          src="/zzang.jpg"
           alt="Next.js logo"
-          width={180}
-          height={38}
+          width={480}
+          height={380}
           priority
         />
         <ol>
           <li>
-            Get started by editing <code>src/app/page.js</code>.
+            안녕하세요 <code>호정우입니다</code>.
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>첫 배포 연습.</li>
         </ol>
 
         <div className={styles.ctas}>
