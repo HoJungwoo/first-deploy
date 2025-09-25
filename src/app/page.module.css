@@ -10,7 +10,7 @@
   padding: 20px;
   font-family: var(--font-geist-sans);
   background-color: #f8f9fa;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .main {
@@ -46,19 +46,19 @@
 }
 
 .nameSection h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin: 0 0 10px 0;
   font-weight: 700;
 }
 
 .nameSection .greeting {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 0 8px 0;
   opacity: 0.9;
 }
 
 .nameSection .description {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 0;
   opacity: 0.8;
   line-height: 1.4;
@@ -75,11 +75,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .contactItem .icon {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /* GitHub 버튼 스타일 */
@@ -95,7 +95,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   transition: all 0.3s ease;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .sectionTitle {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   color: #495057;
   margin: 0 0 20px 0;
   padding-bottom: 8px;
@@ -153,7 +153,7 @@
 .sectionContent {
   color: #6c757d;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .sectionContent p {
