@@ -1,4 +1,10 @@
 {
-    "title": "LG CNS AM Inspire Camp BLOG",
-    "url": "https://github.com/aaahyunseo/inspire3-team6-pj1"
+    "project_blog": {
+        "title": "블로그 웹사이트 개발 프로젝트",
+        "url": "https://github.com/aaahyunseo/inspire3-team6-pj1"
+    },
+    "project_bms_AI": {
+        "title": "AI 기반 배터리 상태 추정 프로젝트",
+        "url": "https://github.com/HoJungwoo/SOC_Estimation_Transformer"
+    }
 }
