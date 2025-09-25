@@ -71,7 +71,6 @@ export default async function Home() {
             </div>
             <div className={styles.contactItem}>
               <a href={data_resumeInfo.github} target="_blank" rel="noopener noreferrer" className={styles.githubButton}>
-                <span className={styles.icon}></span>
                 <span>GitHub</span>
               </a>
             </div>
@@ -272,7 +271,7 @@ export default async function Home() {
                   <h3 className={styles.projectCategoryTitle}>
                     LGCNS Inspire 3th 블로그 개발 프로젝트
                     <a href={data_resumePortfolio.project_blog.url} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
-                      <span className={styles.githubIcon}></span>GitHub
+                      GitHub
                     </a>
                   </h3>
                   
@@ -288,7 +287,7 @@ export default async function Home() {
                   <h3 className={styles.projectCategoryTitle}>
                     {data_resumePortfolio.project_bms_AI.title}
                     <a href={data_resumePortfolio.project_bms_AI.url} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
-                      <span className={styles.githubIcon}></span>GitHub
+                      GitHub
                     </a>
                   </h3>
                   
