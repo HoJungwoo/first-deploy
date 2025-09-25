@@ -6,162 +6,451 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
   min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
+  padding: 20px;
   font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+  background-color: #f8f9fa;
+  font-size: 1.5rem;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+/* 헤더 섹션 */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  text-align: center;
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
+.profileSection {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+.profileImage {
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
+.nameSection h1 {
+  font-size: 4.5rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
 }
 
-.footer {
-  grid-row-start: 3;
+.nameSection .greeting {
+  font-size: 1.8rem;
+  margin: 0 0 8px 0;
+  opacity: 0.9;
+}
+
+.nameSection .description {
+  font-size: 1.6rem;
+  margin: 0;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.contactInfo {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.footer a {
+.contactItem {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 1.6rem;
 }
 
-.footer img {
+.contactItem .icon {
+  font-size: 1.8rem;
+}
+
+/* GitHub 버튼 스타일 */
+.githubButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.githubButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white;
+}
+
+/* 메인 콘텐츠 */
+.content {
+  display: block;
+  padding: 40px;
+}
+
+.leftColumn,
+.rightColumn {
+  display: block;
+  width: 100%;
+}
+
+.leftColumn {
+  margin-bottom: 40px;
+}
+
+.rightColumn {
+  margin-bottom: 0;
+}
+
+/* 섹션 스타일 */
+.section {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 2.4rem;
+  color: #495057;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #667eea;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+}
+
+.sectionContent {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.sectionContent p {
+  margin: 0 0 12px 0;
+}
+
+.sectionContent p:last-child {
+  margin-bottom: 0;
+}
+
+/* 개별 아이템 스타일 */
+.educationItem,
+.experienceItem,
+.activityItem,
+.awardItem,
+.skillItem,
+.techItem,
+.researchItem {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.educationItem:last-child,
+.experienceItem:last-child,
+.activityItem:last-child,
+.researchItem:last-child {
+  margin-bottom: 0;
+}
+
+.period {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 5px !important;
+}
+
+.date {
+  font-size: 1.3rem;
+  color: #868e96;
+  margin-bottom: 0 !important;
+}
+
+.detail {
+  font-size: 1.4rem;
+  color: #6c757d;
+  margin-top: 5px !important;
+}
+
+/* 연구 성과 스타일 */
+.subTitle {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #495057;
+  margin: 0 0 8px 0;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 4px;
+}
+
+.patentList {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.patentList li {
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 4px;
+  border-left: 3px solid #28a745;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.patentList li:last-child {
+  margin-bottom: 0;
+}
+
+/* 기술 스택 그리드 */
+.techStackGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: #fff;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  width: 80px;
+  height: 80px;
   flex-shrink: 0;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
+.techItem:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 600px) {
+.techIcon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.techIcon img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 프로젝트 스타일 */
+.projectCategory {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #667eea;
+}
+
+.projectCategory:last-child {
+  margin-bottom: 0;
+}
+
+.projectCategoryTitle {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #495057;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1.2rem;
+  color: #667eea;
+  text-decoration: none;
+  padding: 5px 12px;
+  border: 1px solid #667eea;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.githubLink:hover {
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+}
+
+.githubIcon {
+  font-size: 1rem;
+}
+
+.projectItem {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #28a745;
+}
+
+.projectItem:last-child {
+  margin-bottom: 0;
+}
+
+.projectTitle {
+  font-weight: 600;
+  color: #495057;
+  margin: 0 0 5px 0;
+  font-size: 1.5rem;
+}
+
+.projectDetail {
+  color: #6c757d;
+  line-height: 1.5;
+  margin: 8px 0 0 0;
+  font-size: 1.35rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
+    padding: 10px;
   }
-
-  .main {
-    align-items: center;
+  
+  .header {
+    padding: 30px 20px;
   }
-
-  .main ol {
+  
+  .profileSection {
+    flex-direction: column;
     text-align: center;
   }
-
-  .ctas {
+  
+  .nameSection h1 {
+    font-size: 3.5rem;
+  }
+  
+  .contactInfo {
     flex-direction: column;
+    gap: 15px;
+  }
+  
+  .content {
+    padding: 30px 20px;
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
   }
 
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
+  .techStackGrid {
     flex-wrap: wrap;
-    align-items: center;
+    gap: 10px;
     justify-content: center;
+  }
+
+  .techItem {
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+  }
+
+  .techIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .projectCategoryTitle {
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+
+  .githubLink {
+    font-size: 1.1rem;
+    padding: 4px 10px;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+  .page {
+    background-color: #f8f9fa;
+  }
+  
+  .main {
+    background: white;
+  }
+  
+  .sectionTitle {
+    color: #495057;
+  }
+  
+  .sectionContent {
+    color: #6c757d;
+  }
+  
+  .period {
+    color: #495057;
+  }
+  
+  .educationItem,
+  .experienceItem,
+  .activityItem,
+  .awardItem,
+  .skillItem,
+  .techItem,
+  .researchItem {
+    background: #f8f9fa;
   }
 }
