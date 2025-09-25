@@ -2,32 +2,32 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 async function getResumeInfo() {
-  const res = await fetch('https://raw.githubusercontent.com/HoJungwoo/first-deploy/refs/heads/main/src/service/resume_general_info_service.json');
-  // API 응답이 성공적인지 확인
-  if (!res.ok) {
-    // 응답이 실패하면 오류를 던져 Next.js가 오류 페이지를 보여주도록 함
-    throw new Error('Failed to fetch data');
-  }
-  return res.json();
+  // const res = await fetch('https://raw.githubusercontent.com/HoJungwoo/first-deploy/refs/heads/main/src/service/resume_general_info_service.json');
+  // // API 응답이 성공적인지 확인
+  // if (!res.ok) {
+  //   // 응답이 실패하면 오류를 던져 Next.js가 오류 페이지를 보여주도록 함
+  //   throw new Error('Failed to fetch data');
+  // }
+  // return res.json();
 
-  // // 로컬 JSON 파일 import
-  // const resumeData = await import('../service/resume_general_info_service.json');
-  // return resumeData.default;
+  // 로컬 JSON 파일 import
+  const resumeData = await import('../service/resume_general_info_service.json');
+  return resumeData.default;
 
 }
 
 
 async function getResumePortfolio() {
-  const res = await fetch('https://raw.githubusercontent.com/HoJungwoo/first-deploy/refs/heads/main/src/service/resume_portfolio.json');
-  // API 응답이 성공적인지 확인
-  if (!res.ok) {
-    // 응답이 실패하면 오류를 던져 Next.js가 오류 페이지를 보여주도록 함
-    throw new Error('Failed to fetch portfolio data');
-  }
-  return res.json();
-  // // 로컬 JSON 파일 import
-  // const portfolioData = await import('../service/resume_portfolio.json');
-  // return portfolioData.default;
+  // const res = await fetch('https://raw.githubusercontent.com/HoJungwoo/first-deploy/refs/heads/main/src/service/resume_portfolio.json');
+  // // API 응답이 성공적인지 확인
+  // if (!res.ok) {
+  //   // 응답이 실패하면 오류를 던져 Next.js가 오류 페이지를 보여주도록 함
+  //   throw new Error('Failed to fetch portfolio data');
+  // }
+  // return res.json();
+  // 로컬 JSON 파일 import
+  const portfolioData = await import('../service/resume_portfolio.json');
+  return portfolioData.default;
 
 
 }
