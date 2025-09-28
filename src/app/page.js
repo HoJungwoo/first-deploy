@@ -257,8 +257,13 @@ export default async function Home() {
               <h2 className={styles.sectionTitle}>교육 사항</h2>
               <div className={styles.sectionContent}>
                 <div className={styles.educationItem}>
-                  <p className={styles.period}>LG CNS (2025.07 ~ 2026.01)</p>
+                  <p className={styles.period}>LG CNS AM INSPIRE CAMP (2025.07 ~ 2026.01)</p>
                   <p className={styles.detail}>AI 서비스 구현에 필요한 프론트엔드와 백엔드 지식을 학습하고, 클라우드·컨테이너·DevOps 등 MSA 기반 인프라 기술을 중점적으로 학습하였습니다.</p>
+                </div>
+                <div className={styles.educationItem}>
+                  <p className={styles.period}>[카인사이드아웃] 자동차 구조학 강의 수강 - 현대엔지비</p>
+                  <p className={styles.date}>2025.02 ~ 2025.03</p>
+                  <p className={styles.detail}>자동차 구조, 내연기관, 전기차 구조 관련 교과목을 수강하며 차량 시스템의 작동 원리와 구조적 차이를 학습하였습니다. 내연기관과 전기 파워트레인의 구성 요소와 특성을 비교하며 친환경차 기술의 기초를 다졌습니다.</p>
                 </div>
               </div>
             </section>
@@ -267,21 +272,6 @@ export default async function Home() {
             <section className={styles.section}>
               <h2 className={styles.sectionTitle}>주요프로젝트</h2>
               <div className={styles.sectionContent}>
-                {/* LGCNS Inspire 3th 블로그 개발 프로젝트 */}
-                <div className={styles.projectCategory}>
-                  <h3 className={styles.projectCategoryTitle}>
-                    LGCNS Inspire 3th 블로그 개발 프로젝트
-                    <a href={data_resumePortfolio.project_blog.url} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
-                      GitHub
-                    </a>
-                  </h3>
-                  
-                  <div className={styles.projectItem}>
-                    <p className={styles.projectTitle}>수강생들의 강의 내용 정리 및 AI를 활용한 학습 도움</p>
-                    <p className={styles.date}>(2025.08 ~ 2025.09)</p>
-                    <p className={styles.projectDetail}>수강생들의 강의 내용 정리 및 AI를 활용한 학습 도움, 학습관리를 목적으로 한 기능을 개발했습니다.</p>
-                  </div>
-                </div>
 
                 {/* AI 기반 배터리 상태 추정 프로젝트 */}
                 <div className={styles.projectCategory}>
