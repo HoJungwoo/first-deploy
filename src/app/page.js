@@ -47,7 +47,7 @@ export default async function Home() {
           <div className={styles.profileSection}>
             <Image
               className={styles.profileImage}
-              src="/zzang.jpg"
+              src="/흑백.png"
               alt="프로필 사진"
               width={200}
               height={200}
